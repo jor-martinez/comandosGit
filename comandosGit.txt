@@ -1,0 +1,118 @@
+----------Configurar git----------------
+
+git config --global user.email "email"
+git config --global user.name "nombre_usuario"
+git config --global core.editor "code --wait" ----> configura como editor a VS code
+git config --global core.autocrlf true -----> windows como deben ser tratados los saltos de linea
+git config --global core.autocrlf input ------> linux/mac como deben ser tratados los saltos de linea
+git config -h   ----> resumen de configuraciones
+
+
+----------subir proyecto----------------
+git init
+git add .
+
+git commit -m "mensaje"
+git remote add origin "url"
+git push origin master
+
+
+---------clonar repositorio-----------------
+git clone "url"
+git branch "nombre_rama"
+git checkout "nombre_rama"
+git push origin "nombre_rama"
+
+
+------ descargar cambios de la rama master --------
+git checkout master
+git pull ---- actualizar los cambios del web al local
+git checkout jorgeMS-developer
+git merge --no-ff master -m "mensaje"    ----> combinar los cambios del pull a mi rama web
+git push   --> actualizar cambios  a la rama local
+
+
+
+----------------- agregar cambios a mi rama -----------------
+git add .      -----> agrega todos los cambios
+git add nombrearchivo.ext  ------> agrega por nombre de archivo
+git add *.txt   -----> agrega todos los archivos con extension txt
+git reset -- src/archivo      -> 	omitir archivos
+git commit -m "mensaje"
+git push  -> sube los cambios a la rama
+
+
+---------------
+
+
+
+
+
+
+
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+
+
+curso GIT:
+Comandos:
+Clonar repositorio: git clone "URL repositorio"
+Ver el estatus para ver en que rama estamos: git status 
+
+comandos que siempre hay que realizar antes de trabajar:
+git status
+git pull : bajar todos los cambios hacia el repositorio local
+git add: agregar los archivos seleccionados a la parte del stach
+git status
+git add . : agrega todos los archivos en el directorio
+git status
+git restore --staged . : lor archvos estan listos para irse al commit
+git status
+git restore: se borran automaticamente los cambios que se hayan hecho
+git status
+"git commit -m "add, delete, update, fix" "
+git commit -m "texto de lo que subio"
+git push: subir cambios recomendado despues de hacer todos los commits necesarios  
+git log: historial de commits
+git fetch: ver si hubo cambios
+
+ejecutar comandos por orden y jerarquia:
+git clone "url" <-- solo para obtener el repositorio
+git status
+git pull <--hacerlo siempre 
+
+git add
+git commit -m "mensaje"
+git push
+
+Ramas:
+git branch: enseña las ramas en todo el repositorio local
+git branch -a: enseñar todas la ramas existentes
+git branch nombreDeMiRama <--- crear nueva rama
+git branch <--- ver las ramas
+git checkout "rama a la que se requiere mover"<----moverse entre ramas
+
+git stash: reserva cambios 
+git stash pop: recuperar las modificaciones (cambios)
+
+
+git merge: copia y mezcla los cambios en la rama a la rama en la que estamos ubicados, en este caso siempre sera en nuestra rama para copiar lo de master
+git merge master -m "mensaje para que no salga el VIM" 
+git merge --abort: abortar el merge hasta que se resuelvan los conflictos
+
+
+mezclar cambios en un archivo
+
+git checkout "nombre de la rama que tiene el archivo"
+git pull para bajar los cambios de esa rama
+git checkout "regresarse a la rama"
+git merge "nombre de la rama donde fuimos a hacer el pull"
+git push
