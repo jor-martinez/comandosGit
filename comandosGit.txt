@@ -37,7 +37,10 @@ git push   --> actualizar cambios  a la rama local
 git add .      -----> agrega todos los cambios
 git add nombrearchivo.ext  ------> agrega por nombre de archivo
 git add *.txt   -----> agrega todos los archivos con extension txt
+git restore --staged nombreArchivo.ext -----> quita un cambio o un archivo del stage
+git restore nombreArchivo.ext ----> recupera un archivo eliminado
 git reset -- src/archivo      -> 	omitir archivos
+git rm nombreArchivo.ext   ---> elimina un archivo y lo agrega al stage
 git commit -m "mensaje"
 git push  -> sube los cambios a la rama
 
