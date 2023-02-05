@@ -25,6 +25,7 @@ git push origin "nombre_rama"
 
 
 ------ descargar cambios de la rama master --------
+
 git checkout master
 git pull ---- actualizar los cambios del web al local
 git checkout jorgeMS-developer
@@ -58,7 +59,7 @@ git push  -> sube los cambios a la rama
 git log -----> historial de commits 
 git log --oneline  ----> historial de commits con ids
 git chechout -b nombreRama     -----> crea una rama y al mismo tiempo nos cambia a esa rama
-
+git merge nombreRama   ---> desde rama main o master con merge traemos los cambios de una rama
 
 
 
