@@ -14,14 +14,14 @@ git add .
 
 git commit -m "mensaje"
 git remote add origin "url"
-git push origin master
+git push -u origin master
 
 
 ---------clonar repositorio-----------------
 git clone "url"
 git branch "nombre_rama"
 git checkout "nombre_rama"
-git push origin "nombre_rama"
+git push -u origin "nombre_rama"
 
 
 ------ descargar cambios de la rama master --------
